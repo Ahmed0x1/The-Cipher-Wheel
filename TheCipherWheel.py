@@ -225,7 +225,7 @@ def decryptWithArithemticFlow():
 	try:
 		Key = int(input("Enter Security Key(0 to 25): "))
 		if isinstance(Key , int) and Key >= 0 and Key <= 25 :
-			writeM = str(input("Enter your message for encryption: "))
+			writeM = str(input("Enter your message for decryption: "))
 			print("\nYour Message Has Been Encrypted:-> " , SDCWithArithemtic(writeM.upper() , Key) , "\n")
 	except:
 		print("Please Enter Integer Number Only For Your Security Key.\n")
