@@ -226,7 +226,7 @@ def decryptWithArithemticFlow():
 		Key = int(input("Enter Security Key(0 to 25): "))
 		if isinstance(Key , int) and Key >= 0 and Key <= 25 :
 			writeM = str(input("Enter your message for encryption: "))
-			print("\nYour Message Has Encrypted:-> " , SDCWithArithemtic(writeM.upper() , Key) , "\n")
+			print("\nYour Message Has Been Encrypted:-> " , SDCWithArithemtic(writeM.upper() , Key) , "\n")
 	except:
 		print("Please Enter Integer Number Only For Your Security Key.\n")
 		ifErr()
@@ -237,7 +237,7 @@ def encryptWithArithemticFlow():
 		Key = int(input("Enter Security Key(0 to 25): "))
 		if isinstance(Key , int) and Key >= 0 and Key <= 25 :
 			writeM = str(input("Enter your message for encryption: "))
-			print("\nYour Message Has Encrypted:-> " , SCWithArithemtic(writeM.upper() , Key) , "\n")
+			print("\nYour Message Has Been Encrypted:-> " , SCWithArithemtic(writeM.upper() , Key) , "\n")
 	except:
 		print("Please Enter Integer Number Only For Your Security Key.\n")
 		ifErr()
@@ -250,7 +250,7 @@ def decryptFlow():
 		if isinstance(Key , int):
 			print("Security Key: " ,checkKey(Key) )
 			print(ModifyArr(Key , SavSecuPoint,OutC))
-			print("\nYour Message Has Decrypted:-> " , SDCStr(Message.upper() , Key) , "\n")
+			print("\nYour Message Has Been Decrypted:-> " , SDCStr(Message.upper() , Key) , "\n")
 	except:
 		print("Please Enter Integer Number Only For Your Security Key.\n")
 		ifErr()
@@ -263,7 +263,7 @@ def encryptFlow():
 			print("Security Key: " ,checkKey(Key) )
 			print(ModifyArr(Key , SavSecuPoint,OutC))
 			writeM = str(input("Enter your message for encryption: "))
-			print("\nYour Message Has Encrypted:-> " , SCStr(writeM.upper() , Key) , "\n")
+			print("\nYour Message Has Been Encrypted:-> " , SCStr(writeM.upper() , Key) , "\n")
 	except:
 		print("Please Enter Integer Number Only For Your Security Key.\n")
 		ifErr()
